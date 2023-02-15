@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper_chat">
+        <div class="wrapper_buttons">
+            <button class="button_settings">Настройки</button>
+            <button class="button_exit">Выйти</button>            
+        </div>
+        <form class="from_wrapper_message" onsubmit="alert('submit!');return false">
+            <div class="wrapper_message">
+
+                <div class="user user_one">
+                    <div class="wrapper_message_user_one">
+                        <div>user1</div>
+                        <div class="message_user_one">Hello, jak sie masz ?</div>
+                        <span>18:45</span>                   
+                    </div>
+                </div>
+
+                <template id="user_one">
+                    <div class="user user_one">
+                        <div class="wrapper_message_user_one">
+                            <div>user1</div>
+                            <span class="message_user_one"></span>
+                            <div>18:45</div>                   
+                        </div>
+                    </div>
+                </template>
+
+                <div class="user user_two">
+                    <div class="wrapper_message_user_two">
+                        <div>user2</div>
+                        <div class="message_user_two">Hello</div>    
+                        <span>18:45</span>                   
+                    
+                    </div>
+                </div>
+                
+    
+            </div>            
+        </form>
+
+
+        <div class="wrapper_message_input">
+            
+            <form class="from_main_input" onsubmit="alert('submit!');return false">
+                <input type="text" class="value_message" placeholder="введите сообщение ">
+            </form>
+
+            <button class="send_message">Отправить </button>
+        </div>
+    </div>
+
+    <div class="wrapper_setting">
+        <div class="wrappers_buttons_two_window">
+            <span class="setting_text">Настройки</span>
+            <button class="exit_setting">x</button>
+
+        </div>
+        <div class="nameOfusers"><h3>имя в чате</h3></div>
+        <div class="users_chats">
+            <form class="user_change_name_form" onsubmit="alert('submit!');return false">
+                <input class="user_change_name"></input>
+            </form>
+        </div>
+    </div>
+
+
+    <div class=" window_new authorization_wrapper">
+        <div class="top_block">
+            <h3 class="text_auto">Авторизация</h3>
+            <span class="close_window_authorization">x</span>
+        </div>
+        <div class="main_block">
+            <div><h2>Почта</h2></div>
+            <form class="from_email_input" onsubmit="alert('submit!');return false">
+                <input class="email_input" >
+            </form>
+            
+        </div>
+        <div class="bottom_buttons">
+            <button class="add_kod">Получить код</button>
+            <button class="enter_kod">Ввести код</button>
+        </div>
+    </div>
+
+    <div class=" window_new sign_wrapper ">
+        <div class="top_block">
+            <h3 class="text_auto">Подтверждение</h3>
+            <span class="close_sign close_window_authorization">x</span>
+        </div>
+        <div class="main_block">
+            <div><h2>Код</h2></div>
+            <input class="enter_kod_input" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtvc3Rhc3Rhdmlja2lqNEBnbWFpbC5jb20iLCJpYXQiOjE2NzUwMTk4OTcsImV4cCI6MTY3ODYxNjI5N30.eJBNOql54Vp2Psl5Q16b606JHZWHh7r9TgACfg3MsTw">
+        </div>
+        <div class="bottom_buttons">
+            <button class="entry_button">Войти</button>
+            
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="Ui-elemments.js"></script>
+    <!-- <script type="modele" src="./newMessage/NewMessage.js"></script> -->
+    <script type="module" src="newMessage/NewMessage.js"></script>
+    <script type="modele" src="obj/obj.js"></script>
+    <!-- <script type="module" src="kodRequest.ts"></script> -->
+</body>
+</html>

@@ -1,0 +1,201 @@
+.wrapper_chat {
+    margin: 0 auto;
+    display: none;
+    width: 300px;
+
+    grid-template-rows: 40px 500px 40px ;
+    grid-template-areas: 
+        "wrapper_buttons"
+        "wrapper_message"
+        "wrapper_message_input"
+    ;
+}
+
+/* блок верхних кнопок */
+
+.wrapper_buttons {
+    grid-area: wrapper_buttons;
+    border: 1px solid #000;
+    padding: 5px;
+
+}
+.button_settings {
+    float: left;
+}
+
+.button_exit {
+    float: right;
+}
+
+
+/*  блок сообщений */
+
+.wrapper_message {
+    height: 500px;
+    grid-area: wrapper_message;
+    border: 1px solid #000;
+    padding: 5px;
+    overflow: auto;
+    
+
+}
+
+.user_one {
+    width: 100%;
+    display: inline-block;
+    
+    
+}
+
+.wrapper_message_user_one {
+    float: right;
+    background-color: #E5E5E5;
+    padding: 3px;
+}
+
+.user_two {
+    /* float: left; */
+    display: block;
+}
+
+.wrapper_message_user_two{
+    float: left;
+    background-color: #E5E5E5;
+    padding: 3px;
+}
+
+/*  самая нижняя панель */
+
+.wrapper_message_input {
+    grid-area: wrapper_message_input;
+    border: 1px solid #000;
+    padding: 5px;
+
+}
+
+.from_main_input {
+    width: 180px;
+    display: inline-block;
+}
+
+.value_message {
+    width: 180px;
+    outline: none;
+}
+
+.send_message {
+    float: right;
+}
+
+/* второе окно*/
+
+.wrapper_setting {
+    
+    margin: 0 auto ;
+    padding: 20px;
+
+    border: 1px solid #000;
+    display: none;
+    width: 300px;
+
+    grid-template-rows: 40px 50px 500px ;
+    grid-template-areas: 
+        "wrappers_buttons_two_window"
+        "nameOfusers"
+        "users_chats"
+    ;
+}
+
+.wrappers_buttons_two_window {
+    grid-area: wrappers_buttons_two_window;
+    padding: 5px;
+}
+
+.setting_users {
+    float: left;
+}
+
+.exit_users {
+    float: right;
+}
+
+.nameOfusers {
+    grid-area: nameOfusers;
+
+
+}
+
+.users_chats {
+    grid-area: users_chats;
+    margin-top: 20px;
+
+}
+
+.user_chat {
+    border: 1px solid #000;
+    /* margin: 10px; */
+    cursor: pointer;
+}
+
+/* two window */
+
+.window_new {
+    border: 1px solid #000;
+    display: grid;
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto;
+
+    grid-template-rows: 80px 80px 400px ;
+  
+    grid-template-areas: 
+        "top_block"
+        "main_block"
+        "bottom_buttons"
+    ;
+}
+
+.top_block {
+    grid-area: top_block;
+    margin: 10px;
+}
+
+
+.close_window_authorization {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.main_block {
+    grid-area: main_block;
+    margin: 10px;
+}
+
+.main_block input{
+    width: 100%;
+    height: 30px;
+}
+
+
+.bottom_buttons {
+    grid-area: bottom_buttons ;
+    display: block;
+    margin: 20px;
+}
+
+.bottom_buttons button {
+    margin-top: 20px;
+    width: 110px;
+    height: 30px;
+}
+
+.text_auto {
+    display: inline-block;
+}
+
+/* ne wwindow 2.2 */
+
+.sign_wrapper {
+    display: none;
+}
